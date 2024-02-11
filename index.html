@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
+        <title>Valentine</title>
+       
         
     </head> 
     <body>
         <div class="container">
             <div >
-
+                <video controls muted autoplay loop>
+                    <source src="I Want You (prod. ARCX).mp3" type="audio/mpeg">
+                  </video>
                 <h1 class = "header_text">Would you like to be my valentine?</h1>
             </div>
             <div class="gif_container">
@@ -16,6 +22,7 @@
             <div class = "buttons">
                 <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                
                 <script>
                     function nextPage() {
                         window.location.href = "yes.html";
@@ -28,8 +35,9 @@
                         document.getElementById('noButton').style.top = `${y}px`;
                     }
                 </script> 
+                
+                        
             </div>
         </div>
-       
     </body> 
 </html>
